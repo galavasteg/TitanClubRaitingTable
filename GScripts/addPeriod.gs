@@ -1,4 +1,7 @@
 function newPeriod() {
+//  if (!isCompletedCoreLiguePeriod()) {
+//    return Browser.msgBox(CORE_LEAGUE_PERIOD_IS_NOT_COMPLETED_MSG)
+//  }
   var coreLeagueSheet = SS.getSheetByName(CORE_LEAGUE_NAME);
   var memberNames = getCoreMembers(coreLeagueSheet);
 
@@ -27,6 +30,9 @@ function newCoreMemberPeriod(sheetName) {
 };
 
 function newPeriodForCoreLeague() {
+//  if (!isCompletedCoreLiguePeriod()) {
+//    return Browser.msgBox(CORE_LEAGUE_PERIOD_IS_NOT_COMPLETED_MSG)
+//  }
   var coreLeagueSheet = SS.getSheetByName(CORE_LEAGUE_NAME);
 
   var prevPeriodData = getCoreLeagueLastPeriod(coreLeagueSheet);
